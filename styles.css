@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Titillium+Web&display=swap');
+
+:root {
+  --font-size-primary: 1rem;
+  --font-size-secondary: 1.3rem;
+  --crust: #11111b;
+  --mantle: #181825;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--crust);
+  color: var(--subtext1);
+  font-size: var(--font-size-secondary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.container,
+footer {
+  max-width: 1000px;
+}
+
+.container {
+  width: 90%;
+  margin: 1.5rem auto 0 auto;
+}
+
+.title {
+  display: flex;
+}
+
+.title a img {
+  width: 6rem;
+  border-radius: 25%;
+}
+
+.title a img:hover {
+  filter: brightness(1.22);
+}
+
+.title .title__text {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title .title__text h1 {
+  font-size: var(--font-size-secondary);
+  color: var(--text);
+}
+
+.title .title__text div {
+  font-size: var(--font-size-primary);
+  color: var(--subtext1);
+}
+
+.title .title__more {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title .title__more li {
+  list-style-type: none;
+}
+
+.title .title__more li a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+.description p {
+  background-color: var(--mantle);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+footer {
+  font-size: var(--font-size-primary);
+  width: 90%;
+  margin: 2.5rem auto 0 auto;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .links li {
+  list-style-type: none;
+}
+
+footer .links li a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+footer .source_code {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .source_code a {
+  text-decoration: none;
+  color: var(--text);
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title a img {
+    width: 9rem;
+  }
+
+  .title .title__text {
+    margin-left: 0;
+  }
+
+  .title .title__more {
+    margin-top: 1rem;
+    margin-right: auto;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
