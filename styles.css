@@ -90,6 +90,7 @@ footer {
   background-color: var(--mantle);
   border-radius: 1rem;
   padding: 1.5rem;
+  word-wrap: break-word;
 }
 
 footer {
