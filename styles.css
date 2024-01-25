@@ -7,6 +7,12 @@
   --mantle: #181825;
   --text: #cdd6f4;
   --subtext1: #bac2de;
+  --subtext2: #9399b2;
+  --mocha-blue: #89b4fa;
+  --mocha-teal: #94e2d5;
+  --mocha-yellow: #f9e2af;
+  --mocha-pink: #f5c2e7;
+  --mocha-green: #a6e3a1;
 }
 
 * {
@@ -82,6 +88,11 @@ footer {
   color: var(--text);
 }
 
+.title .title__more li a:hover {
+  text-decoration: underline;
+  color: var(--mocha-yellow);
+}
+
 .description {
   margin-top: 1rem;
 }
@@ -91,6 +102,76 @@ footer {
   border-radius: 1rem;
   padding: 1.5rem;
   word-wrap: break-word;
+}
+
+.description p .email {
+  color: var(--mocha-blue);
+}
+
+.description p .description__project {
+  display: block;
+}
+
+.description p .description__project_title {
+  text-decoration: none;
+}
+
+.description p .description__project_title:hover {
+  text-decoration: underline;
+}
+
+.description p .description__project_title--teal {
+  color: var(--mocha-teal);
+}
+
+.description p .description__project_title--pink {
+  color: var(--mocha-pink);
+}
+
+.description p .description__project_title--green {
+  color: var(--mocha-green);
+}
+
+.description p .description__project_tech {
+  display: block;
+  color: var(--subtext2);
+}
+
+.description .cat {
+  display: flex;
+  background-color: transparent;
+}
+
+.description .cat .cat__art {
+  white-space: pre-line;
+  margin: auto;
+  font-size: var(--font-size-primary);
+  color: var(--mocha-blue);
+  position: relative;
+}
+
+.description .cat .cat__art:hover .cat__art__meow {
+  display: inline-block;
+}
+
+.description .cat .cat__art .cat__art__meow {
+  display: none;
+  background-color: var(--mocha-blue);
+  color: var(--crust);
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 20px;
+  right: 80px;
+}
+
+.description .cat .cat__art .cat__art__meow::after {
+  content: '';
+  border-right: 5px solid var(--mocha-blue);
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 20px;
+  right: 10px;
 }
 
 footer {
@@ -111,6 +192,11 @@ footer .links li a {
   color: var(--text);
 }
 
+footer .links li a:hover {
+  color: var(--mocha-teal);
+  text-decoration: underline;
+}
+
 footer .source_code {
   display: flex;
   flex-direction: column;
@@ -120,6 +206,11 @@ footer .source_code a {
   text-decoration: none;
   color: var(--text);
   margin-top: auto;
+}
+
+footer .source_code a:hover {
+  color: var(--mocha-blue);
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
